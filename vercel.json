@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builds": [
+  "projects": [
     {
       "src": "apps/bank-webhook/package.json",
       "use": "@vercel/node",
@@ -11,16 +11,6 @@
     {
       "src": "apps/user-app/package.json",
       "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/apps/bank-webhook/dist/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/apps/user-app/$1"
     }
   ],
   "env": {

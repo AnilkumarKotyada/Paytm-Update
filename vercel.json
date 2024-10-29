@@ -11,10 +11,6 @@
     {
       "src": "apps/user-app/package.json",
       "use": "@vercel/next"
-    },
-    {
-      "src": "package.json",
-      "use": "turbo"
     }
   ],
   "routes": [

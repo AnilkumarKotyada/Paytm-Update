@@ -1,8 +1,14 @@
 {
-    "projects": [
+    "builds": [
       {
-        "src": "apps/user-app",
+        "src": "apps/user-app/next.config.js",
         "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "apps/user-app/$1"
       }
     ]
   }
